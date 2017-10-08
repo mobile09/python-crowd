@@ -275,9 +275,11 @@ class CrowdServer(object):
         """
 
         params = {
-            "validationFactors": [
-                {"name": "remote_address", "value": remote, },
-            ]
+            "validation-factors": {
+                "validationFactors": [
+                    {"name": "remote_address", "value": remote, },
+                ]
+            }
         }
 
         if proxy:
